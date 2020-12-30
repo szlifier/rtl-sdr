@@ -11,3 +11,5 @@ RUN cmake ../ -DDETACH_KERNEL_DRIVER=ON
 RUN make
 RUN make install
 
+RUN rtl_tcp -a 0.0.0.0
+
